@@ -7,29 +7,21 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
     "name": {
       "type": "string"
     },
-    "small_des": {
-      "type": "text"
-    },
-    "long_des": {
+    "des": {
       "type": "text"
     },
     "price": {
       "type": "integer"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "is_published": {
-      "type": "boolean"
     }
   }
 }
